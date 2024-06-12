@@ -1,0 +1,22 @@
+# other answers are similar but i like mine
+
+
+#my initail solution
+
+class Solution:
+
+    def encode(self, strs: List[str]) -> str:
+        f=""
+        for i in strs:
+            f=f+i+"*@%" #random substring that would not appear
+        return f
+
+    def decode(self, s: str) -> List[str]:
+        res = [i for i in range(len(s)) if s.startswith("*@%", i)] 
+        n=0
+        f=[]
+        for i in res:
+            f.append(s[n:i])
+            n=i+3
+            print(n,i)
+        return f
