@@ -1,4 +1,13 @@
 
+# used dic for this like two sum problem, BUT used enumerate here and it was way better
+class Solution:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
+        diffs={}
+        for i,num in enumerate(numbers):
+            if target-num in diffs:
+                return [diffs[target-num]+1,i+1]
+            diffs[num]=i
+
 
 #my first simple logic solution. worst 5%. most did under 100ms, this took 5000ms [O(n)]
 class Solution:
