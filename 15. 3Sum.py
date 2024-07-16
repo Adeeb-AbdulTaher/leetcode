@@ -1,4 +1,6 @@
 
+
+
 #skightly better brute force. shortening the search arrays.
 class Solution:
     def threeSum(self, nums: List[int]) -> List[List[int]]:
