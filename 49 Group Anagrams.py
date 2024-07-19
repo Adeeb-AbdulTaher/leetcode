@@ -1,7 +1,5 @@
 #my optimized solution, top 45%
-class Solution:
-
-    
+class Solution:    
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         a=defaultdict(list)
         for i in strs:
